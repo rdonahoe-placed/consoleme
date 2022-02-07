@@ -18,7 +18,7 @@ Overview of steps:
 from setuptools import find_packages, setup
 
 setup(
-    name="example_consoleme_plugins",
+    name="fsq_consoleme_plugins",
     version="0.0.1",
     packages=find_packages(),
     include_package_data=True,
@@ -28,15 +28,15 @@ setup(
     entry_points={
         "consoleme.plugins": [
             # Change the name of the entry point for your plugin here, and in your configuration
-            "default_config = example_consoleme_plugins.plugins.config.config:Config",
-            "default_auth = example_consoleme_plugins.plugins.auth.auth:Auth",
-            "default_aws = example_consoleme_plugins.plugins.aws.aws:Aws",
-            "default_celery_tasks = example_consoleme_plugins.plugins.celery_tasks.celery_tasks:internal_schedule",
-            "default_celery_tasks_functions = example_consoleme_plugins.plugins.celery_tasks.celery_tasks:CeleryTasks",
-            "default_metrics = example_consoleme_plugins.plugins.metrics.metrics:Metric",
-            "default_policies = example_consoleme_plugins.plugins.policies.policies:Policies",
-            "default_group_mapping = example_consoleme_plugins.plugins.group_mapping.group_mapping:GroupMapping",
-            "default_internal_routes = example_consoleme_plugins.plugins.internal_routes.internal_routes:InternalRoutes",
+            "default_config = fsq_consoleme_plugins.plugins.config.config:Config",
+            "default_auth = fsq_consoleme_plugins.plugins.auth.auth:Auth",
+            "default_aws = fsq_consoleme_plugins.plugins.aws.aws:Aws",
+            "default_celery_tasks = fsq_consoleme_plugins.plugins.celery_tasks.celery_tasks:internal_schedule",
+            "default_celery_tasks_functions = fsq_consoleme_plugins.plugins.celery_tasks.celery_tasks:CeleryTasks",
+            "default_metrics = fsq_consoleme_plugins.plugins.metrics.metrics:Metric",
+            "default_policies = fsq_consoleme_plugins.plugins.policies.policies:Policies",
+            "default_group_mapping = fsq_consoleme_plugins.plugins.group_mapping.group_mapping:GroupMapping",
+            "default_internal_routes = fsq_consoleme_plugins.plugins.internal_routes.internal_routes:InternalRoutes",
         ]
     },
 )
